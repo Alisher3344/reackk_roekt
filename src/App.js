@@ -1,4 +1,3 @@
-
 import './App.css';
 import { Fragment } from 'react';
 import Nav from './Components/Nav';
@@ -9,18 +8,20 @@ import Informatsia from './Components/Informatsia';
 import Comp_users from './Components/Comp_users';
 import Novosti from './Components/Novosti';
 import Footer from './Components/Footer';
+import Caruser from './Components/Caruser';
 function App() {
   return (
-<Fragment>
+<body style={{scrollBehavior:"smooth"}}>
   <Nav/>
   <Header/>
   <Aside/>
+  <Caruser/>
   <Nash_pro/>
   <Informatsia/>
   <Comp_users/>
   <Novosti/>
   <Footer/>
-</Fragment>
+</body>
   );
 }
 
